@@ -40,7 +40,7 @@ namespace game
 
             for (int i = zombies.Count - 1; i >= 0; i--)
             {
-                zombies[i].Update(gameTime);
+                zombies[i].Update(gameTime, zombies);
                 if (!zombies[i].IsActive)
                 {
                     zombies.RemoveAt(i);

@@ -7537,11 +7537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snuuy\\source\\repos\\game\\game\\game.csproj",
+      "projectUniqueName": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj",
       "projectName": "game",
-      "projectPath": "C:\\Users\\snuuy\\source\\repos\\game\\game\\game.csproj",
+      "projectPath": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj",
       "packagesPath": "C:\\Users\\snuuy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snuuy\\source\\repos\\game\\game\\obj\\",
+      "outputPath": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\snuuy\\AppData\\Roaming\\NuGet\\NuGet.Config",

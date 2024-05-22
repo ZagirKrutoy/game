@@ -36,3 +36,9 @@ C:\Users\snuuy\source\repos\game\game\obj\Debug\net6.0-windows\game.pdb
 C:\Users\snuuy\source\repos\game\game\obj\Debug\net6.0-windows\game.genruntimeconfig.cache
 C:\Users\snuuy\source\repos\game\game\obj\Debug\net6.0-windows\ref\game.dll
 C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\background.xnb
+C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\SplashFont.xnb
+C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\grassBackground.xnb
+C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\man.xnb
+C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\zombie.xnb
+C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\bulet.xnb
+C:\Users\snuuy\source\repos\game\game\bin\Debug\net6.0-windows\Content\fire2.xnb

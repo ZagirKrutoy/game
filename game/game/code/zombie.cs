@@ -14,6 +14,9 @@ namespace game
         private Player player;
         private int health = 2;
         private float rotation;
+        private double lastAttackTime;
+        private const double attackDelay = 2000; // Задержка между атаками в миллисекундах
+        private int damage = 1; // Урон, наносимый зомби
 
 
         public bool IsActive { get; private set; }
@@ -25,6 +28,7 @@ namespace game
             this.player = player;
             speed = 2f; // Скорость зомби
             IsActive = true;
+            lastAttackTime = 0;
         }
 
         public void Update(GameTime gameTime, List<Zombie> allZombies)
@@ -40,29 +44,45 @@ namespace game
             {
                 position = targetPosition;
             }
-
-             bool IsPositionOccupied(Vector2 positionToCheck, List<Zombie> allZombies)
+            if (Vector2.Distance(position, player.Position) < 50) // Радиус игрока и зомби 50
             {
-                foreach (var otherZombie in allZombies)
+                if (gameTime.TotalGameTime.TotalMilliseconds - lastAttackTime > attackDelay)
                 {
-                    if (otherZombie != this && Vector2.Distance(positionToCheck, otherZombie.position) < 30)
+                    if (gameTime.TotalGameTime.TotalMilliseconds - lastAttackTime > attackDelay)
                     {
-                        return true; // Позиция занята другим зомби
+                        player.TakeDamage(damage);
+                        lastAttackTime = gameTime.TotalGameTime.TotalMilliseconds;
                     }
                 }
-                return false; // Позиция свободна
             }
+
+            if (position.X < 0 || position.X > 1920 || position.Y < 0 || position.Y > 1080)
+            {
+                IsActive = false;
+            }
+
 
             // Зомби активен, пока он в пределах экрана
             if (position.X < 0 || position.X > 1920 || position.Y < 0 || position.Y > 1080)
             {
                 IsActive = false;
             }
-        }   
+        }
+        bool IsPositionOccupied(Vector2 positionToCheck, List<Zombie> allZombies)
+        {
+            foreach (var otherZombie in allZombies)
+            {
+                if (otherZombie != this && Vector2.Distance(positionToCheck, otherZombie.position) < 30)
+                {
+                    return true; // Позиция занята другим зомби
+                }
+            }
+            return false; // Позиция свободна
+        }
+
         public void TakeDamage()
         {
-            // Уменьшаем здоровье зомби или устанавливаем IsActive в false, если здоровье меньше или равно нулю
-            health --;
+            health--;
             if (health <= 0)
             {
                 IsActive = false;

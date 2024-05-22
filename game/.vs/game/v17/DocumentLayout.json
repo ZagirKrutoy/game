@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,24 +15,24 @@
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\zombie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\content\\gameoverfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\code\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\content\\gameoverfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\content\\gameoverfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\content\\man.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\content\\man.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\content\\man.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\content\\background2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -46,23 +50,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Bullet.cs",
+              "RelativeDocumentMoniker": "game\\code\\Bullet.cs",
+              "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Bullet.cs",
+              "RelativeToolTip": "game\\code\\Bullet.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T21:30:57.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "man.png - PNG [49x43, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\man.png",
               "RelativeDocumentMoniker": "game\\Content\\man.png",
               "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\man.png - PNG [49x43, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
               "RelativeToolTip": "game\\Content\\man.png - PNG [49x43, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-05-22T18:52:50.273Z",
-              "EditorCaption": " - PNG [49x43, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, PNG]"
+              "WhenOpened": "2024-05-22T18:52:50.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GameOverFont.spritefont",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\GameOverFont.spritefont",
               "RelativeDocumentMoniker": "game\\Content\\GameOverFont.spritefont",
@@ -70,38 +86,37 @@
               "RelativeToolTip": "game\\Content\\GameOverFont.spritefont",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-22T18:14:56.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T18:14:56.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Player.cs",
               "RelativeDocumentMoniker": "game\\code\\Player.cs",
               "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Player.cs",
               "RelativeToolTip": "game\\code\\Player.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAHEAAAAsAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBoAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T17:43:07.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "GameScreen.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\GameScreen.cs",
               "RelativeDocumentMoniker": "game\\code\\GameScreen.cs",
               "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\GameScreen.cs",
               "RelativeToolTip": "game\\code\\GameScreen.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAA0wEoAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T15:48:14.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Game1.cs",
               "RelativeDocumentMoniker": "game\\Game1.cs",
@@ -109,12 +124,11 @@
               "RelativeToolTip": "game\\Game1.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAkwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:24:55.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T15:24:55.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SplashScreen.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\SplashScreen.cs",
               "RelativeDocumentMoniker": "game\\code\\SplashScreen.cs",
@@ -127,20 +141,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "zombie.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\zombie.cs",
               "RelativeDocumentMoniker": "game\\code\\zombie.cs",
               "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\zombie.cs",
               "RelativeToolTip": "game\\code\\zombie.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwA8AAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T15:41:05.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "background2.jpg - Bitmap [1024x1024, 24-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, JPG]",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\background2.jpg",
               "RelativeDocumentMoniker": "game\\Content\\background2.jpg",
@@ -151,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "background.jpg - Bitmap [1920x1080, 24-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, JPG]",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\background.jpg",
               "RelativeDocumentMoniker": "game\\Content\\background.jpg",

@@ -18,6 +18,8 @@ namespace game
         private double lastShootTime;
         private double shootDelay = 200; // Задержка между выстрелами в миллисекундах
         public Vector2 Position => position;
+        public List<Bullet> Bullets => bullets;
+
 
 
         public Player()
@@ -33,7 +35,7 @@ namespace game
             bulletTexture = content.Load<Texture2D>("fire2");
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, List<Zombie> zombies)
         {
             KeyboardState state = Keyboard.GetState();
             if (state.IsKeyDown(Keys.A))
@@ -64,7 +66,7 @@ namespace game
 
             for (int i = bullets.Count - 1; i >= 0; i--)
             {
-                bullets[i].Update(gameTime);
+                bullets[i].Update(gameTime, zombies);
                 if (!bullets[i].IsActive)
                     bullets.RemoveAt(i);
             }

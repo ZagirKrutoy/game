@@ -30,13 +30,14 @@ namespace game
         }
         public void Update(GameTime gameTime)
         {
-            player.Update(gameTime);
+            player.Update(gameTime, zombies);
 
             if (gameTime.TotalGameTime.TotalMilliseconds - lastSpawnTime > spawnDelay)
             {
                 SpawnZombie();
                 lastSpawnTime = gameTime.TotalGameTime.TotalMilliseconds;
             }
+
             for (int i = zombies.Count - 1; i >= 0; i--)
             {
                 zombies[i].Update(gameTime);
@@ -46,7 +47,13 @@ namespace game
                 }
             }
 
+            // Обновление пуль и передача списка зомби
+            foreach (var bullet in player.Bullets)
+            {
+                bullet.Update(gameTime, zombies);
+            }
         }
+
         private void SpawnZombie()
         {
             // Спавним зомби в случайной позиции

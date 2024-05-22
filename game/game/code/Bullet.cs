@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using System.Collections.Generic;
 
 namespace game
 {
@@ -22,14 +23,25 @@ namespace game
             IsActive = true;
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, List<Zombie> zombies)
         {
             position += direction * speed;
-            if (position.X < 0 || position.X > 1920 || position.Y < 0 || position.Y > 1080) 
+            if (position.X < 0 || position.X > 1920 || position.Y < 0 || position.Y > 1080)
             {
                 IsActive = false;
             }
+
+            // Проверка столкновения пули с зомби
+            foreach (var zombie in zombies)
+            {
+                if (Vector2.Distance(position, zombie.position) < (texture.Width / 2 + zombie.texture.Width / 2))
+                {
+                    IsActive = false; // Пуля исчезает при попадании
+                    zombie.TakeDamage(); // Зомби получает урон
+                }
+            }
         }
+
 
         public void Draw(SpriteBatch spriteBatch)
         {

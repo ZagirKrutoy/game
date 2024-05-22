@@ -4,13 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/background.jpg</File>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bulet.png</File>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/File.spritefont</File>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/fire2.png</File>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grassBackground2.png</File>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man.png</File>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/background.jpg</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/bulet.png</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/File.spritefont</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/fire2.png</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/grassBackground2.png</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/man.png</File>
+    <File>C:/Users/snuuy/source/repos/game/game/Content/zombie.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

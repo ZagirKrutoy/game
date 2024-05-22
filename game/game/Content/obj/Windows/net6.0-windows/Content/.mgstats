@@ -1,1 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/background.jpg","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/background.xnb","TextureProcessor","Texture2DContent",268196,8294485,0,3361411
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bulet.png","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/bulet.xnb","TextureProcessor","Texture2DContent",19979,2944085,0,0652394
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/File.spritefont","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/SplashFont.xnb","FontDescriptionProcessor","SpriteFontContent",2278,270239,0,1233928
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/fire2.png","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/fire2.xnb","TextureProcessor","Texture2DContent",2083,485,0,001612
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grassBackground2.png","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/grassBackground.xnb","TextureProcessor","Texture2DContent",2640792,8294485,0,192472
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man.png","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/man.xnb","TextureProcessor","Texture2DContent",1544,8513,0,0020909
+"C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png","C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/zombie.xnb","TextureProcessor","Texture2DContent",1623,6105,0,0014589

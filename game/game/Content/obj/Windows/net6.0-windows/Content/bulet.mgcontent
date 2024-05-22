@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/snuuy/source/repos/game/game/Content/bulet.png</SourceFile>
+  <SourceFile>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bulet.png</SourceFile>
   <SourceTime>2024-05-22T17:47:46.1317638+05:00</SourceTime>
-  <DestFile>C:/Users/snuuy/source/repos/game/game/Content/bin/Windows/Content/bulet.xnb</DestFile>
-  <DestTime>2024-05-22T17:49:34.0163776+05:00</DestTime>
+  <DestFile>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/bulet.xnb</DestFile>
+  <DestTime>2024-05-22T20:25:19.9076907+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T16:44:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

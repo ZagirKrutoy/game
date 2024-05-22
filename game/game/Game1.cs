@@ -21,6 +21,7 @@ namespace game
         Texture2D background;
         Stat Stat = Stat.SplashScreen;
 
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);

@@ -14,6 +14,7 @@ namespace game
         private List<Zombie> zombies;
         private double lastSpawnTime;
         private double spawnDelay = 2000; // Задержка между спавном зомби в миллисекундах
+        private SpriteFont gameOverFont;
 
 
         public GameScreen()
@@ -27,30 +28,28 @@ namespace game
             background = content.Load<Texture2D>("grassBackground");
             player.LoadContent(content);
             zombieTexture = content.Load<Texture2D>("zombie");
+            gameOverFont = content.Load<SpriteFont>("GameOverFont"); // Загрузите шрифт для надписи "Игра окончена"
         }
         public void Update(GameTime gameTime)
         {
-            player.Update(gameTime, zombies);
-
-            if (gameTime.TotalGameTime.TotalMilliseconds - lastSpawnTime > spawnDelay)
+            if (player.IsAlive)
             {
-                SpawnZombie();
-                lastSpawnTime = gameTime.TotalGameTime.TotalMilliseconds;
-            }
+                player.Update(gameTime, zombies);
 
-            for (int i = zombies.Count - 1; i >= 0; i--)
-            {
-                zombies[i].Update(gameTime, zombies);
-                if (!zombies[i].IsActive)
+                if (gameTime.TotalGameTime.TotalMilliseconds - lastSpawnTime > spawnDelay)
                 {
-                    zombies.RemoveAt(i);
+                    SpawnZombie();
+                    lastSpawnTime = gameTime.TotalGameTime.TotalMilliseconds;
                 }
-            }
 
-            // Обновление пуль и передача списка зомби
-            foreach (var bullet in player.Bullets)
-            {
-                bullet.Update(gameTime, zombies);
+                for (int i = zombies.Count - 1; i >= 0; i--)
+                {
+                    zombies[i].Update(gameTime, zombies);
+                    if (!zombies[i].IsActive)
+                    {
+                        zombies.RemoveAt(i);
+                    }
+                }
             }
         }
 
@@ -71,6 +70,14 @@ namespace game
             {
                 zombie.Draw(spriteBatch);
             }
+            if (!player.IsAlive)
+            {
+                string gameOverText = "Game over";
+                Vector2 textSize = gameOverFont.MeasureString(gameOverText);
+                Vector2 position = new Vector2(1920 / 2 - textSize.X / 2, 1080 / 2 - textSize.Y / 2);
+                spriteBatch.DrawString(gameOverFont, gameOverText, position, Color.Red);
+            }
         }
+
     }
 }

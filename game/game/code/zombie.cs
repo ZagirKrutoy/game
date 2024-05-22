@@ -12,8 +12,9 @@ namespace game
         public Vector2 position;
         private float speed;
         private Player player;
-        public int health = 2;
+        private int health = 2;
         private float rotation;
+
 
         public bool IsActive { get; private set; }
 

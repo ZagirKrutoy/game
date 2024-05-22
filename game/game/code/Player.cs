@@ -19,6 +19,9 @@ namespace game
         private double shootDelay = 200; // Задержка между выстрелами в миллисекундах
         public Vector2 Position => position;
         public List<Bullet> Bullets => bullets;
+        public int Health { get; private set; }
+
+        public bool IsAlive => Health > 0;
 
 
 
@@ -27,6 +30,7 @@ namespace game
             position = new Vector2(400, 300); // Начальная позиция персонажа
             speed = 5f; 
             bullets = new List<Bullet>();
+            Health = 1; // Начальное здоровье игрока
         }
 
         public void LoadContent(ContentManager content)
@@ -70,7 +74,23 @@ namespace game
                 if (!bullets[i].IsActive)
                     bullets.RemoveAt(i);
             }
+            foreach (var zombie in zombies)
+            {
+                if (Vector2.Distance(position, zombie.position) < (texture.Width / 2 + zombie.texture.Width / 2))
+                {
+                    TakeDamage(10); // Урон игроку
+                }
+            }
+             void TakeDamage(int damage)
+            {
+                Health -= damage;
+                if (Health <= 0)
+                {
+                    Health = 0;
+                }
+            }
         }
+
 
         private void Shoot(double currentTime)
         {

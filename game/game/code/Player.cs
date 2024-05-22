@@ -20,8 +20,9 @@ namespace game
         public Vector2 Position => position;
         public List<Bullet> Bullets => bullets;
         public int Health { get; private set; }
-
         public bool IsAlive => Health > 0;
+        private int health;
+        private Texture2D healthTexture;
 
 
 
@@ -30,13 +31,14 @@ namespace game
             position = new Vector2(400, 300); // Начальная позиция персонажа
             speed = 5f; 
             bullets = new List<Bullet>();
-            Health = 1; // Начальное здоровье игрока
+            Health = 30; // Количество жизней игрока
         }
 
         public void LoadContent(ContentManager content)
         {
             texture = content.Load<Texture2D>("man"); 
             bulletTexture = content.Load<Texture2D>("fire2");
+            healthTexture = content.Load<Texture2D>("heart"); // Загрузите текстуру для жизней
         }
 
         public void Update(GameTime gameTime, List<Zombie> zombies)
@@ -78,7 +80,7 @@ namespace game
             {
                 if (Vector2.Distance(position, zombie.position) < (texture.Width / 2 + zombie.texture.Width / 2))
                 {
-                    TakeDamage(10); // Урон игроку
+                    TakeDamage(1); // Урон игроку
                 }
             }
              void TakeDamage(int damage)
@@ -108,6 +110,10 @@ namespace game
             foreach (var bullet in bullets)
             {
                 bullet.Draw(spriteBatch);
+            }
+            for (int i = 0; i < Health; i++)
+            {
+                spriteBatch.Draw(healthTexture, new Vector2(10 + i * 80, 10), Color.White); // Расположение и отступ между жизнями
             }
         }
     }

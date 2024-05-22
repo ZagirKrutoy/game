@@ -10,6 +10,7 @@
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/fire2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/GameOverFont.spritefont</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grassBackground2.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/heart.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png</File>
   </SourceFiles>
@@ -20,6 +21,7 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>grassBackground.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>

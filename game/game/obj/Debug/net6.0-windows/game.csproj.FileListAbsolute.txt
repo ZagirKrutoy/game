@@ -88,3 +88,4 @@ C:\Users\snuuy\Documents\GitHub\game\game\game\obj\Debug\net6.0-windows\game.pdb
 C:\Users\snuuy\Documents\GitHub\game\game\game\obj\Debug\net6.0-windows\game.genruntimeconfig.cache
 C:\Users\snuuy\Documents\GitHub\game\game\game\obj\Debug\net6.0-windows\ref\game.dll
 C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\GameOverFont.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\heart.xnb

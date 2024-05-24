@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj": {}
+    "C:\\Users\\snuuy\\Source\\Repos\\game2\\game\\game\\game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj": {
+    "C:\\Users\\snuuy\\Source\\Repos\\game2\\game\\game\\game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj",
+        "projectUniqueName": "C:\\Users\\snuuy\\Source\\Repos\\game2\\game\\game\\game.csproj",
         "projectName": "game",
-        "projectPath": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj",
+        "projectPath": "C:\\Users\\snuuy\\Source\\Repos\\game2\\game\\game\\game.csproj",
         "packagesPath": "C:\\Users\\snuuy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\obj\\",
+        "outputPath": "C:\\Users\\snuuy\\Source\\Repos\\game2\\game\\game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\snuuy\\AppData\\Roaming\\NuGet\\NuGet.Config",

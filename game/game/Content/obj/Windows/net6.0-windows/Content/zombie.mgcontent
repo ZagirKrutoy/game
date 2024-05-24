@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png</SourceFile>
-  <SourceTime>2024-05-19T08:35:56.3740505+05:00</SourceTime>
-  <DestFile>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bin/Windows/Content/zombie.xnb</DestFile>
-  <DestTime>2024-05-22T20:35:46.5432338+05:00</DestTime>
+  <SourceFile>C:/Users/snuuy/Source/Repos/game2/game/game/Content/zombie.png</SourceFile>
+  <SourceTime>2024-05-23T13:49:26.2740718+05:00</SourceTime>
+  <DestFile>C:/Users/snuuy/Source/Repos/game2/game/game/Content/bin/Windows/Content/zombie.xnb</DestFile>
+  <DestTime>2024-05-23T16:34:46.4524479+05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T16:44:56+05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -14,8 +14,8 @@ namespace game
         private Player player;
         private int health = 2;
         private float rotation;
-        private double lastAttackTime;
-        private const double attackDelay = 2000; // Задержка между атаками в миллисекундах
+        public double lastAttackTime;
+        private const double attackDelay = 1000; // Задержка между атаками в миллисекундах
         private int damage = 1; // Урон, наносимый зомби
 
 
@@ -48,19 +48,10 @@ namespace game
             {
                 if (gameTime.TotalGameTime.TotalMilliseconds - lastAttackTime > attackDelay)
                 {
-                    if (gameTime.TotalGameTime.TotalMilliseconds - lastAttackTime > attackDelay)
-                    {
-                        player.TakeDamage(damage);
-                        lastAttackTime = gameTime.TotalGameTime.TotalMilliseconds;
-                    }
+                    player.TakeDamage(damage);
+                    lastAttackTime = gameTime.TotalGameTime.TotalMilliseconds;
                 }
             }
-
-            if (position.X < 0 || position.X > 1920 || position.Y < 0 || position.Y > 1080)
-            {
-                IsActive = false;
-            }
-
 
             // Зомби активен, пока он в пределах экрана
             if (position.X < 0 || position.X > 1920 || position.Y < 0 || position.Y > 1080)
@@ -77,10 +68,17 @@ namespace game
                     return true; // Позиция занята другим зомби
                 }
             }
-            return false; 
+            return false; // Позиция свободна
         }
 
-
+        public void TakeDamage()
+        {
+            health--;
+            if (health <= 0)
+            {
+                IsActive = false;
+            }
+        }
 
         public void Draw(SpriteBatch spriteBatch)
         {

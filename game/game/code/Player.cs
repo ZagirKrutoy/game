@@ -21,26 +21,21 @@ namespace game
         public List<Bullet> Bullets => bullets;
         public int Health { get; private set; }
         public bool IsAlive => Health > 0;
-        private int health;
         private Texture2D healthTexture;
-        private double lastZombieAttackTime;
-        private const double zombieAttackDelay = 2000;
 
 
 
         public Player()
         {
             position = new Vector2(400, 300); // Начальная позиция персонажа
-            speed = 5f; 
+            speed = 5f;
             bullets = new List<Bullet>();
             Health = 10; // Количество жизней игрока
-            lastZombieAttackTime = 0;
-
         }
 
         public void LoadContent(ContentManager content)
         {
-            texture = content.Load<Texture2D>("man"); 
+            texture = content.Load<Texture2D>("man");
             bulletTexture = content.Load<Texture2D>("fire2");
             healthTexture = content.Load<Texture2D>("heart"); // Загрузите текстуру для жизней
         }
@@ -87,17 +82,6 @@ namespace game
                 if (!bullets[i].IsActive)
                     bullets.RemoveAt(i);
             }
-            foreach (var zombie in zombies)
-            {
-                if (Vector2.Distance(position, zombie.position) < (texture.Width / 2 + zombie.texture.Width / 2))
-                {
-                    if (gameTime.TotalGameTime.TotalMilliseconds - lastZombieAttackTime > zombieAttackDelay)
-                    {
-                        TakeDamage(1); // Урон игроку
-                        lastZombieAttackTime = gameTime.TotalGameTime.TotalMilliseconds;
-                    }
-                }
-            }
 
         }
 
@@ -107,7 +91,7 @@ namespace game
             Vector2 direction = new Vector2((float)Math.Cos(rotation), (float)Math.Sin(rotation));
             Bullet bullet = new Bullet(bulletTexture, position, direction);
             bullets.Add(bullet);
-            lastShootTime = currentTime; 
+            lastShootTime = currentTime;
         }
 
 

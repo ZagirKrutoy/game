@@ -77,17 +77,10 @@ namespace game
                     return true; // Позиция занята другим зомби
                 }
             }
-            return false; // Позиция свободна
+            return false; 
         }
 
-        public void TakeDamage()
-        {
-            health--;
-            if (health <= 0)
-            {
-                IsActive = false;
-            }
-        }
+
 
         public void Draw(SpriteBatch spriteBatch)
         {

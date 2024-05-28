@@ -42,9 +42,12 @@ namespace game
         public void TakeDamage(int damage)
         {
             Health -= damage;
+            Game1.Instance.playerHitSound.Play();
             if (Health <= 0)
             {
                 Health = 0;
+                Game1.Instance.playerDeathSound.Play();
+                Game1.Instance.PlayerDied();
             }
         }
         public void Update(GameTime gameTime, List<Zombie> zombies)

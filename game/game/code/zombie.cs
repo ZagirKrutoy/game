@@ -17,7 +17,8 @@ namespace game
         public double lastAttackTime;
         private const double attackDelay = 1000; // Задержка между атаками в миллисекундах
         private int damage = 1; // Урон, наносимый зомби
-
+        private float hitboxOffset = 20f; // Смещение хитбокса в сторону левого плеча
+        private float hitboxRadius = 15f; // Радиус хитбокса
 
         public bool IsActive { get; private set; }
 
@@ -59,11 +60,12 @@ namespace game
                 IsActive = false;
             }
         }
+
         bool IsPositionOccupied(Vector2 positionToCheck, List<Zombie> allZombies)
         {
             foreach (var otherZombie in allZombies)
             {
-                if (otherZombie != this && Vector2.Distance(positionToCheck, otherZombie.position) < 30)
+                if (otherZombie != this && Vector2.Distance(positionToCheck, otherZombie.position) < hitboxRadius)
                 {
                     return true; // Позиция занята другим зомби
                 }
@@ -74,6 +76,7 @@ namespace game
         public void TakeDamage()
         {
             health--;
+            Game1.Instance.zombieHitSound.Play();
             if (health <= 0)
             {
                 IsActive = false;
@@ -82,7 +85,15 @@ namespace game
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, null, Color.White, rotation, Vector2.Zero, 1.0f, SpriteEffects.None, 0f);
+            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2);
+            spriteBatch.Draw(texture, position, null, Color.White, rotation, origin, 1.0f, SpriteEffects.None, 0f);
+        }
+
+        public Rectangle GetHitbox()
+        {
+            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2);
+            Vector2 hitboxPosition = position + new Vector2((float)Math.Cos(rotation) * hitboxOffset, (float)Math.Sin(rotation) * hitboxOffset);
+            return new Rectangle((int)(hitboxPosition.X - hitboxRadius), (int)(hitboxPosition.Y - hitboxRadius), (int)(hitboxRadius * 2), (int)(hitboxRadius * 2));
         }
     }
 }

@@ -4,23 +4,43 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/background.jpg</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/bulet.png</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/File.spritefont</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/fire2.png</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/GameOverFont.spritefont</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/grassBackground2.png</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/heart.png</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/man.png</File>
-    <File>C:/Users/snuuy/Source/Repos/game2/game/game/Content/zombie.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/background.jpg</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/btn.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bulet.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/continue.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/dead_sound.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/exit.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/File.spritefont</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/fire2.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/game_music.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/GameOverFont.spritefont</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grassBackground2.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/heart.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/menu_music.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/playerDamageSound.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/slider_bar.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/slider_button.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombieDamageSound.mp3</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File>new_game</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>SplashFont</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File>grassBackground.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

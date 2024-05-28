@@ -136,3 +136,15 @@ C:\Users\snuuy\Source\Repos\game2\game\game\obj\Debug\net6.0-windows\refint\game
 C:\Users\snuuy\Source\Repos\game2\game\game\obj\Debug\net6.0-windows\game.pdb
 C:\Users\snuuy\Source\Repos\game2\game\game\obj\Debug\net6.0-windows\game.genruntimeconfig.cache
 C:\Users\snuuy\Source\Repos\game2\game\game\obj\Debug\net6.0-windows\ref\game.dll
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\continue.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\exit.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\new_game.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\menu_music.wma
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\menu_music.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\game_music.wma
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\game_music.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\dead_sound.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\playerDamageSound.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\zombieDamageSound.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\slider_bar.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\slider_button.xnb

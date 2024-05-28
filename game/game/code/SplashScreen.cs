@@ -12,12 +12,12 @@ namespace game
         static int timeCounter = 0;
         static Color color;
         public static SpriteFont Font { get; set; }
-        static Vector2 textPosition = new Vector2(700, 200);
+        static Vector2 textPosition = new Vector2(760, 200);
 
         static public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(Background, Vector2.Zero, Color.White);    
-            spriteBatch.DrawString(Font, "Zombie Shooter!", textPosition, Color.White);
+            spriteBatch.DrawString(Font, "Zombie Shooter!", textPosition, Color.Red);
         }
 
         static public void Update()

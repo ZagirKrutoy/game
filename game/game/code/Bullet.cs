@@ -34,7 +34,7 @@ namespace game
             // Проверка столкновения пули с зомби
             foreach (var zombie in zombies)
             {
-                if (Vector2.Distance(position, zombie.position) < (texture.Width / 2 + zombie.texture.Width / 2))
+                if (GetHitbox().Intersects(zombie.GetHitbox()))
                 {
                     IsActive = false; // Пуля исчезает при попадании
                     zombie.TakeDamage(); // Зомби получает урон
@@ -42,6 +42,11 @@ namespace game
             }
         }
 
+        public Rectangle GetHitbox()
+        {
+            // Возвращает хитбокс пули
+            return new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height);
+        }
 
         public void Draw(SpriteBatch spriteBatch)
         {

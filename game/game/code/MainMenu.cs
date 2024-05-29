@@ -3,11 +3,20 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Input;
 
 namespace game
 {
     public class MainMenu
     {
+        public static Texture2D Background { get; set; }
+        static int timeCounter = 0;
+        static Color color;
+        public static SpriteFont Font { get; set; }
+        static Vector2 textPosition = new Vector2(760, 200);
+        public static Texture2D menuCursorTexture;
+        private static Vector2 cursorPosition;
+
         private List<MenuButton> buttons;
         private SoundEffect menuMusic;
         private SoundEffectInstance menuMusicInstance;
@@ -59,6 +68,11 @@ namespace game
 
         public void Update()
         {
+            MouseState mouseState = Mouse.GetState();
+            cursorPosition = new Vector2(mouseState.X -5, mouseState.Y - 15);
+            color = Color.FromNonPremultiplied(255, 255, 255, timeCounter % 256);
+            timeCounter++;
+
             foreach (var button in buttons)
             {
                 button.Update();
@@ -70,12 +84,17 @@ namespace game
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            spriteBatch.Draw(Background, Vector2.Zero, Color.White);
+            spriteBatch.DrawString(Font, "Zombie Shooter!", textPosition, Color.Red);
+            
+
             foreach (var button in buttons)
             {
                 button.Draw(spriteBatch);
             }
 
             volumeSlider.Draw(spriteBatch);
+            spriteBatch.Draw(menuCursorTexture, cursorPosition, Color.White);
         }
 
         public void PlayMusic()

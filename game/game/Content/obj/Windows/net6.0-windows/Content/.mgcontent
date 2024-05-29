@@ -13,14 +13,21 @@
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/File.spritefont</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/fire2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/game_music.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/gameCursorTexture.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/GameOverFont.spritefont</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grassBackground2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/heart.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man_run1.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man_run2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/menu_music.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/menuCursorTexture.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/playerDamageSound.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/ScoreFont.spritefont</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/slider_bar.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/slider_button.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie_run1.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie_run2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombieDamageSound.mp3</File>
   </SourceFiles>
@@ -35,7 +42,14 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File>grassBackground.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

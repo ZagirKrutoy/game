@@ -8,8 +8,11 @@ namespace game
 {
     public class Zombie
     {
-        public Texture2D texture;
-        public Vector2 position;
+        private Texture2D[] runTextures;
+        private int currentFrame;
+        private double frameTime;
+        private double timeSinceLastFrame;
+        private Vector2 position;
         private float speed;
         private Player player;
         private int health = 2;
@@ -22,18 +25,29 @@ namespace game
 
         public bool IsActive { get; private set; }
 
-        public Zombie(Texture2D texture, Vector2 startPosition, Player player)
+        public Zombie(Texture2D[] runTextures, Vector2 startPosition, Player player, float speed)
         {
-            this.texture = texture;
+            this.runTextures = runTextures;
             this.position = startPosition;
             this.player = player;
-            speed = 2f; // Скорость зомби
+            this.speed = speed; // Скорость зомби
             IsActive = true;
             lastAttackTime = 0;
+            currentFrame = 0;
+            frameTime = 200; // Время между кадрами в миллисекундах
+            timeSinceLastFrame = 0;
         }
 
         public void Update(GameTime gameTime, List<Zombie> allZombies)
         {
+            timeSinceLastFrame += gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (timeSinceLastFrame >= frameTime)
+            {
+                currentFrame = (currentFrame + 1) % runTextures.Length;
+                timeSinceLastFrame = 0;
+            }
+
             Vector2 direction = player.Position - position;
             if (direction != Vector2.Zero)
             {
@@ -80,20 +94,26 @@ namespace game
             if (health <= 0)
             {
                 IsActive = false;
+                Game1.Instance.IncreaseScore(10); // Увеличение очков на 10 за убитого зомби
             }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2);
-            spriteBatch.Draw(texture, position, null, Color.White, rotation, origin, 1.0f, SpriteEffects.None, 0f);
+            Vector2 origin = new Vector2(runTextures[currentFrame].Width / 2, runTextures[currentFrame].Height / 2);
+            spriteBatch.Draw(runTextures[currentFrame], position, null, Color.White, rotation, origin, 1.0f, SpriteEffects.None, 0f);
         }
 
         public Rectangle GetHitbox()
         {
-            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2);
+            Vector2 origin = new Vector2(runTextures[currentFrame].Width / 2, runTextures[currentFrame].Height / 2);
             Vector2 hitboxPosition = position + new Vector2((float)Math.Cos(rotation) * hitboxOffset, (float)Math.Sin(rotation) * hitboxOffset);
             return new Rectangle((int)(hitboxPosition.X - hitboxRadius), (int)(hitboxPosition.Y - hitboxRadius), (int)(hitboxRadius * 2), (int)(hitboxRadius * 2));
+        }
+
+        public void IncreaseSpeed(float amount)
+        {
+            speed += amount;
         }
     }
 }

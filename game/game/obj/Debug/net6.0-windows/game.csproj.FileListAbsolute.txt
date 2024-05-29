@@ -148,3 +148,10 @@ C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\
 C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\zombieDamageSound.xnb
 C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\slider_bar.xnb
 C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\slider_button.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\ScoreFont.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\man_run1.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\man_run2.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\zombie_run1.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\zombie_run2.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\gameCursorTexture.xnb
+C:\Users\snuuy\Documents\GitHub\game\game\game\bin\Debug\net6.0-windows\Content\menuCursorTexture.xnb

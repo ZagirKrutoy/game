@@ -32,7 +32,13 @@ namespace game
         public SoundEffect zombieHitSound;
         public SoundEffect playerHitSound;
         public SoundEffect playerDeathSound;
+        private int score;
+        private SpriteFont scoreFont;
+        private int lastScore;
         
+
+
+
 
         public Game1()
         {
@@ -40,6 +46,8 @@ namespace game
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
             Instance = this;
+            score = 0;
+            IsMouseVisible = false;
         }
 
         protected override void Initialize()
@@ -55,8 +63,9 @@ namespace game
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            SplashScreen.Background = Content.Load<Texture2D>("grassBackground");
-            SplashScreen.Font = Content.Load<SpriteFont>("SplashFont");
+            MainMenu.Background = Content.Load<Texture2D>("grassBackground");
+            MainMenu.Font = Content.Load<SpriteFont>("SplashFont");
+            MainMenu.menuCursorTexture = Content.Load<Texture2D>("menuCursorTexture");
 
             gameScreen = new GameScreen();
             gameScreen.LoadContent(Content);
@@ -76,11 +85,13 @@ namespace game
             zombieHitSound = Content.Load<SoundEffect>("zombieDamageSound");
             playerHitSound = Content.Load<SoundEffect>("playerDamageSound");
             playerDeathSound = Content.Load<SoundEffect>("dead_sound");
+            scoreFont = Content.Load<SpriteFont>("ScoreFont");
         }
 
         protected override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
+            
             switch (Stat)
             {
                 case Stat.SplashScreen:
@@ -112,11 +123,11 @@ namespace game
             switch (Stat)
             {
                 case Stat.SplashScreen:
-                    SplashScreen.Draw(_spriteBatch);
                     mainMenu.Draw(_spriteBatch);
                     break;
                 case Stat.Game:
                     gameScreen.Draw(_spriteBatch);
+                    DrawScore();
                     break;
             }
             _spriteBatch.End();
@@ -130,6 +141,7 @@ namespace game
             gameScreen.LoadContent(Content);
             menuMusicInstance.Stop();
             gameMusicInstance.Play();
+            ResetScore();
         }
 
         public void ContinueGame()
@@ -142,6 +154,8 @@ namespace game
         public void PlayerDied()
         {
             gameMusicInstance.Stop();
+            lastScore = score;
+            ResetScore();
         }
 
         public void SetVolume(float volume)
@@ -149,5 +163,29 @@ namespace game
 
             SoundEffect.MasterVolume = volume;
         }
+        public void IncreaseScore(int amount)
+        {
+            score += amount;
+            if (score / 100 >= gameScreen.difficultyLevel)
+            {
+                gameScreen.difficultyLevel++;
+                gameScreen.IncreaseDifficulty();
+            }
+        }
+        public void ResetScore()
+        {
+            score = 0;
+        }
+
+
+        private void DrawScore()
+        {
+            if (gameScreen.PlayerIsAlive)
+            {
+                string scoreText = "Score: " + score;
+                _spriteBatch.DrawString(scoreFont, scoreText, new Vector2(1600, 20), Color.White);
+            }
+        }
+        public int LastScore => lastScore;
     }
 }

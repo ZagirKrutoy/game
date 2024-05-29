@@ -9,7 +9,11 @@ namespace game
 {
     public class Player
     {
-        private Texture2D texture;
+        private Texture2D[] runTextures;
+        private int currentFrame;
+        private double elapsedFrameTime;
+        private double frameTime = 100; // Время между кадрами в миллисекундах
+
         private Vector2 position;
         private float speed;
         private float rotation;
@@ -22,8 +26,7 @@ namespace game
         public int Health { get; private set; }
         public bool IsAlive => Health > 0;
         private Texture2D healthTexture;
-
-
+        private bool isMoving;
 
         public Player()
         {
@@ -35,10 +38,14 @@ namespace game
 
         public void LoadContent(ContentManager content)
         {
-            texture = content.Load<Texture2D>("man");
+            runTextures = new Texture2D[3];
+            runTextures[0] = content.Load<Texture2D>("man_run1");
+            runTextures[1] = content.Load<Texture2D>("man");
+            runTextures[2] = content.Load<Texture2D>("man_run2");
             bulletTexture = content.Load<Texture2D>("fire2");
-            healthTexture = content.Load<Texture2D>("heart"); // Загрузите текстуру для жизней
+            healthTexture = content.Load<Texture2D>("heart");
         }
+
         public void TakeDamage(int damage)
         {
             Health -= damage;
@@ -50,24 +57,46 @@ namespace game
                 Game1.Instance.PlayerDied();
             }
         }
+
         public void Update(GameTime gameTime, List<Zombie> zombies)
         {
             KeyboardState state = Keyboard.GetState();
+            isMoving = false;
+
             if (state.IsKeyDown(Keys.A))
             {
                 position.X -= speed;
+                isMoving = true;
             }
             if (state.IsKeyDown(Keys.D))
             {
                 position.X += speed;
+                isMoving = true;
             }
             if (state.IsKeyDown(Keys.W))
             {
                 position.Y -= speed;
+                isMoving = true;
             }
             if (state.IsKeyDown(Keys.S))
             {
                 position.Y += speed;
+                isMoving = true;
+            }
+
+            // Обновление анимации
+            if (isMoving)
+            {
+                elapsedFrameTime += gameTime.ElapsedGameTime.TotalMilliseconds;
+                if (elapsedFrameTime > frameTime)
+                {
+                    currentFrame = (currentFrame + 1) % runTextures.Length;
+                    elapsedFrameTime = 0;
+                }
+            }
+            else
+            {
+                currentFrame = 1; // Если игрок не движется, показываем кадр "man"
             }
 
             // Обновление угла поворота в сторону курсора
@@ -85,9 +114,7 @@ namespace game
                 if (!bullets[i].IsActive)
                     bullets.RemoveAt(i);
             }
-
         }
-
 
         private void Shoot(double currentTime)
         {
@@ -97,18 +124,20 @@ namespace game
             lastShootTime = currentTime;
         }
 
-
         public void Draw(SpriteBatch spriteBatch)
         {
-            Vector2 origin = new Vector2(texture.Width / 2, texture.Height / 2); // Центр спрайта
-            spriteBatch.Draw(texture, position, null, Color.White, rotation, origin, 1.0f, SpriteEffects.None, 0f);
+            Texture2D currentTexture = runTextures[currentFrame];
+            Vector2 origin = new Vector2(currentTexture.Width / 2, currentTexture.Height / 2);
+            spriteBatch.Draw(currentTexture, position, null, Color.White, rotation, origin, 1.0f, SpriteEffects.None, 0f);
+
             foreach (var bullet in bullets)
             {
                 bullet.Draw(spriteBatch);
             }
+
             for (int i = 0; i < Health; i++)
             {
-                spriteBatch.Draw(healthTexture, new Vector2(10 + i * 80, 10), Color.White); // Расположение и отступ между жизнями
+                spriteBatch.Draw(healthTexture, new Vector2(10 + i * 80, 10), Color.White);
             }
         }
     }

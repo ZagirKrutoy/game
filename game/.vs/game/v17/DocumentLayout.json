@@ -3,15 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\game.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\game.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\snuuy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\code\\menuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\menuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\menubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\menubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|c:\\users\\snuuy\\documents\\github\\game\\game\\game\\code\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\gamescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\snuuy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,20 +38,8 @@
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\menubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\menubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|solutionrelative:game\\code\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D145335-DCF7-4E03-B75E-12A0435F8838}|game\\game.csproj|C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\volumeslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,20 +77,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MonoGame.Content.Builder.Task.targets",
-              "DocumentMoniker": "C:\\Users\\snuuy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "ToolTip": "C:\\Users\\snuuy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAlwI0AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-05-30T06:14:01.632Z",
+              "DocumentIndex": 0,
+              "Title": "game",
+              "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj",
+              "RelativeDocumentMoniker": "game\\game.csproj",
+              "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\game.csproj",
+              "RelativeToolTip": "game\\game.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-30T11:38:58.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Pickup.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Pickup.cs",
               "RelativeDocumentMoniker": "game\\code\\Pickup.cs",
@@ -98,20 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Grenade.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Grenade.cs",
               "RelativeDocumentMoniker": "game\\code\\Grenade.cs",
               "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Grenade.cs",
               "RelativeToolTip": "game\\code\\Grenade.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAwwDcAAAAlAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwDcAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T01:59:49.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Bullet.cs",
               "RelativeDocumentMoniker": "game\\code\\Bullet.cs",
@@ -119,11 +122,12 @@
               "RelativeToolTip": "game\\code\\Bullet.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAIwDgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T01:44:44.169Z"
+              "WhenOpened": "2024-05-30T01:44:44.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "VolumeSlider.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\VolumeSlider.cs",
               "RelativeDocumentMoniker": "game\\code\\VolumeSlider.cs",
@@ -135,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "MenuButton.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\MenuButton.cs",
               "RelativeDocumentMoniker": "game\\code\\MenuButton.cs",
@@ -143,23 +147,25 @@
               "RelativeToolTip": "game\\code\\MenuButton.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T01:07:42.498Z"
+              "WhenOpened": "2024-05-29T01:07:42.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\MainMenu.cs",
-              "RelativeDocumentMoniker": "game\\code\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\MainMenu.cs",
-              "RelativeToolTip": "game\\code\\MainMenu.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAkwH4AAAA+AAAA",
+              "DocumentIndex": 1,
+              "Title": "MenuScreen.cs",
+              "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\MenuScreen.cs",
+              "RelativeDocumentMoniker": "game\\code\\MenuScreen.cs",
+              "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\MenuScreen.cs",
+              "RelativeToolTip": "game\\code\\MenuScreen.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAA5wD0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:16:54.613Z"
+              "WhenOpened": "2024-05-29T00:16:54.613Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\Player.cs",
               "RelativeDocumentMoniker": "game\\code\\Player.cs",
@@ -171,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Game1.cs",
               "RelativeDocumentMoniker": "game\\Game1.cs",
@@ -179,11 +185,37 @@
               "RelativeToolTip": "game\\Game1.cs",
               "ViewState": "AQIAAHwAAAAAAAAAAAAwwBYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:24:55.724Z"
+              "WhenOpened": "2024-05-22T15:24:55.724Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "GameScreen.cs",
+              "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\GameScreen.cs",
+              "RelativeDocumentMoniker": "game\\code\\GameScreen.cs",
+              "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\GameScreen.cs",
+              "RelativeToolTip": "game\\code\\GameScreen.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAqwEQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T15:48:14.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MonoGame.Content.Builder.Task.targets",
+              "DocumentMoniker": "C:\\Users\\snuuy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
+              "ToolTip": "C:\\Users\\snuuy\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAlwI0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-05-30T06:14:01.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "zombie.cs",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\zombie.cs",
               "RelativeDocumentMoniker": "game\\code\\zombie.cs",
@@ -195,19 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameScreen.cs",
-              "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\GameScreen.cs",
-              "RelativeDocumentMoniker": "game\\code\\GameScreen.cs",
-              "ToolTip": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\code\\GameScreen.cs",
-              "RelativeToolTip": "game\\code\\GameScreen.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAqwEQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:48:14.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "GameOverFont.spritefont",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\GameOverFont.spritefont",
               "RelativeDocumentMoniker": "game\\Content\\GameOverFont.spritefont",
@@ -219,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ScoreFont.spritefont",
               "DocumentMoniker": "C:\\Users\\snuuy\\Documents\\GitHub\\game\\game\\game\\Content\\ScoreFont.spritefont",
               "RelativeDocumentMoniker": "game\\Content\\ScoreFont.spritefont",

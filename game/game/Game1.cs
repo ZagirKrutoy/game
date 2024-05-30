@@ -21,7 +21,7 @@ namespace game
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private GameScreen gameScreen;
-        private MainMenu mainMenu;
+        private MenuScreen mainMenu;
         public static Game1 Instance { get; private set; }
         Texture2D background;
         Stat Stat = Stat.SplashScreen;
@@ -71,14 +71,14 @@ namespace game
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            MainMenu.Background = Content.Load<Texture2D>("backgroundA");
-            MainMenu.Font = Content.Load<SpriteFont>("SplashFont");
-            MainMenu.menuCursorTexture = Content.Load<Texture2D>("menuCursorTexture");
+            MenuScreen.Background = Content.Load<Texture2D>("backgroundA");
+            MenuScreen.Font = Content.Load<SpriteFont>("SplashFont");
+            MenuScreen.menuCursorTexture = Content.Load<Texture2D>("menuCursorTexture");
 
             gameScreen = new GameScreen();
             gameScreen.LoadContent(Content);
 
-            mainMenu = new MainMenu();
+            mainMenu = new MenuScreen();
             mainMenu.LoadContent(Content);
 
             menuMusic = Content.Load<SoundEffect>("menu_music");

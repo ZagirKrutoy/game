@@ -8,7 +8,7 @@ using System;
 
 namespace game
 {
-    public class MainMenu
+    public class MenuScreen
     {
         public static Texture2D Background { get; set; }
         static int timeCounter = 0;
@@ -26,7 +26,7 @@ namespace game
         private bool showInstructions;
         private MenuButton instructionButton;
 
-        public MainMenu()
+        public MenuScreen()
         {
             buttons = new List<MenuButton>();
             volumeSlider = new VolumeSlider(new Vector2(1385, 1015));

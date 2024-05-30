@@ -12,7 +12,7 @@ namespace game
         private float speed = 7f;
         private bool isActive;
         private double explosionTime;
-        private double explosionDelay = 1500; // Задержка перед взрывом в миллисекундах
+        private double explosionDelay = 5000; // Задержка перед взрывом в миллисекундах
         private float explosionRadius = 200f; // Радиус взрыва гранаты
         private int damage = 5; // Урон от взрыва гранаты
 
@@ -51,8 +51,9 @@ namespace game
                 }
 
                 // Ограничение максимального расстояния
-                if (Vector2.Distance(position, Player.position) > 700) // Макс. расстояние 500
+                if (Vector2.Distance(position, Player.position) > 600) // Макс. расстояние 600
                 {
+                    Explode(zombies);
                     isActive = false;
                 }
             }

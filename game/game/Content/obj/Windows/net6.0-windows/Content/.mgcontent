@@ -4,7 +4,6 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/background.jpg</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/backgroundA.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/btn.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bulet.png</File>
@@ -52,7 +51,6 @@
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombieDamageSound.mp3</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>new_game</File>
     <File xsi:nil="true" />

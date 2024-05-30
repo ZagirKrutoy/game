@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.IO;
 
 namespace game
 {
@@ -32,13 +34,18 @@ namespace game
         public SoundEffect zombieHitSound;
         public SoundEffect playerHitSound;
         public SoundEffect playerDeathSound;
+        public SoundEffect grenadeExplosionSound;
+        public SoundEffect reloadingSound;
+        public SoundEffect shootSound;
+
         private int score;
         private SpriteFont scoreFont;
         private int lastScore;
-        
+        private int highScore;
 
+        private const string HighScoreFileName = "highscore.txt";
 
-
+        public int HighScore => highScore;
 
         public Game1()
         {
@@ -47,6 +54,7 @@ namespace game
             IsMouseVisible = true;
             Instance = this;
             score = 0;
+            highScore = 0; // Изначальный рекорд
             IsMouseVisible = false;
         }
 
@@ -63,7 +71,7 @@ namespace game
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            MainMenu.Background = Content.Load<Texture2D>("grassBackground");
+            MainMenu.Background = Content.Load<Texture2D>("backgroundA");
             MainMenu.Font = Content.Load<SpriteFont>("SplashFont");
             MainMenu.menuCursorTexture = Content.Load<Texture2D>("menuCursorTexture");
 
@@ -85,13 +93,18 @@ namespace game
             zombieHitSound = Content.Load<SoundEffect>("zombieDamageSound");
             playerHitSound = Content.Load<SoundEffect>("playerDamageSound");
             playerDeathSound = Content.Load<SoundEffect>("dead_sound");
+            grenadeExplosionSound = Content.Load<SoundEffect>("grenadeExplosionSound");
+            reloadingSound = Content.Load<SoundEffect>("reloading");
+            shootSound = Content.Load<SoundEffect>("shoot");
             scoreFont = Content.Load<SpriteFont>("ScoreFont");
+
+            LoadHighScore();
         }
 
         protected override void Update(GameTime gameTime)
         {
             KeyboardState keyboardState = Keyboard.GetState();
-            
+
             switch (Stat)
             {
                 case Stat.SplashScreen:
@@ -155,14 +168,19 @@ namespace game
         {
             gameMusicInstance.Stop();
             lastScore = score;
+            if (lastScore > highScore)
+            {
+                highScore = lastScore; // Обновление рекорда, если текущий счет выше
+                SaveHighScore();
+            }
             ResetScore();
         }
 
         public void SetVolume(float volume)
         {
-
             SoundEffect.MasterVolume = volume;
         }
+
         public void IncreaseScore(int amount)
         {
             score += amount;
@@ -172,20 +190,51 @@ namespace game
                 gameScreen.IncreaseDifficulty();
             }
         }
+
         public void ResetScore()
         {
             score = 0;
         }
-
 
         private void DrawScore()
         {
             if (gameScreen.PlayerIsAlive)
             {
                 string scoreText = "Score: " + score;
+                string levelText = "Level: " + gameScreen.difficultyLevel;
+                _spriteBatch.DrawString(scoreFont, levelText, new Vector2(1600, 60), Color.White);
                 _spriteBatch.DrawString(scoreFont, scoreText, new Vector2(1600, 20), Color.White);
             }
         }
+
         public int LastScore => lastScore;
+
+        private void SaveHighScore()
+        {
+            try
+            {
+                File.WriteAllText(HighScoreFileName, highScore.ToString());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error saving high score: " + ex.Message);
+            }
+        }
+
+        private void LoadHighScore()
+        {
+            try
+            {
+                if (File.Exists(HighScoreFileName))
+                {
+                    string highScoreText = File.ReadAllText(HighScoreFileName);
+                    highScore = int.Parse(highScoreText);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading high score: " + ex.Message);
+            }
+        }
     }
 }

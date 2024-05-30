@@ -12,7 +12,7 @@ namespace game
         private int currentFrame;
         private double frameTime;
         private double timeSinceLastFrame;
-        private Vector2 position;
+        public Vector2 position;
         private float speed;
         private Player player;
         private int health = 2;
@@ -87,9 +87,9 @@ namespace game
             return false; // Позиция свободна
         }
 
-        public void TakeDamage()
+        public void TakeDamage(int damage)
         {
-            health--;
+            health = health - damage;
             Game1.Instance.zombieHitSound.Play();
             if (health <= 0)
             {

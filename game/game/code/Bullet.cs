@@ -37,7 +37,7 @@ namespace game
                 if (GetHitbox().Intersects(zombie.GetHitbox()))
                 {
                     IsActive = false; // Пуля исчезает при попадании
-                    zombie.TakeDamage(); // Зомби получает урон
+                    zombie.TakeDamage(1); // Зомби получает урон
                 }
             }
         }

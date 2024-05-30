@@ -21,12 +21,26 @@ namespace game
         private Texture2D cursorTexture;
         private Vector2 cursorPosition;
         public bool PlayerIsAlive => player.IsAlive;
+        public int Score { get; private set; }
+        private List<Pickup> pickups;
+        private Texture2D grenadePickupTexture;
+        private Texture2D healthPickupTexture;
+        private double lastPickupTime;
+        private double pickupInterval = 8000; // Интервал появления пикапов в миллисекундах
+        private Vector2[] pickupPositions = new Vector2[]
+        {
+            new Vector2(200, 200),
+            new Vector2(600, 600),
+            new Vector2(1400, 800)
+        };
+
+
 
         public GameScreen()
         {
             player = new Player();
             zombies = new List<Zombie>();
-
+            pickups = new List<Pickup>();
         }
 
         public void LoadContent(ContentManager content)
@@ -40,6 +54,9 @@ namespace game
             zombieRunTextures[1] = content.Load<Texture2D>("zombie");
             zombieRunTextures[2] = content.Load<Texture2D>("zombie_run2");
             cursorTexture = content.Load<Texture2D>("gameCursorTexture");
+
+            grenadePickupTexture = content.Load<Texture2D>("dropGrenates");
+            healthPickupTexture = content.Load<Texture2D>("dropHeart");
 
             gameOverFont = content.Load<SpriteFont>("GameOverFont"); // Загрузите шрифт для надписи "Игра окончена"
         }
@@ -67,9 +84,33 @@ namespace game
                         zombies.RemoveAt(i);
                     }
                 }
+                if (gameTime.TotalGameTime.TotalMilliseconds - lastPickupTime > pickupInterval)
+                {
+                    CreatePickup();
+                    lastPickupTime = gameTime.TotalGameTime.TotalMilliseconds;
+                }
+
+                // Обновление пикапов
+                foreach (var pickup in pickups)
+                {
+                    pickup.Update(gameTime, player);
+                }
+
+                // Удаление неактивных пикапов
+                pickups.RemoveAll(p => !p.IsActive);
+
             }
         }
+        private void CreatePickup()
+        {
+            Random random = new Random();
+            int positionIndex = random.Next(pickupPositions.Length);
+            PickupType type = (PickupType)random.Next(2); // 0 или 1 (Grenade или Health)
+            Texture2D texture = type == PickupType.Grenade ? grenadePickupTexture : healthPickupTexture;
 
+            Pickup pickup = new Pickup(texture, pickupPositions[positionIndex], type);
+            pickups.Add(pickup);
+        }
         public void IncreaseDifficulty()
         {
             spawnDelay = Math.Max(500, spawnDelay - 200); // Минимальная задержка между спавном - 500 миллисекунд
@@ -101,12 +142,16 @@ namespace game
                 string gameOverText = "Game over";
                 Vector2 textSize = gameOverFont.MeasureString(gameOverText);
                 Vector2 position = new Vector2(1920 / 2 - textSize.X / 2, 1080 / 2 - textSize.Y / 2);
-                spriteBatch.DrawString(gameOverFont, gameOverText, position, Color.Red);
+                spriteBatch.DrawString(gameOverFont, gameOverText, position, Color.DarkRed);
 
                 string finalScoreText = "Score: " + Game1.Instance.LastScore;
                 Vector2 finalScoreTextSize = gameOverFont.MeasureString(finalScoreText);
                 Vector2 finalScorePosition = new Vector2(1920 / 2 - finalScoreTextSize.X / 2, 1080 / 2 - finalScoreTextSize.Y / 2 + 70);
-                spriteBatch.DrawString(gameOverFont, finalScoreText, finalScorePosition, Color.Red);
+                spriteBatch.DrawString(gameOverFont, finalScoreText, finalScorePosition, Color.DarkRed);
+            }
+            foreach (var pickup in pickups)
+            {
+                pickup.Draw(spriteBatch);
             }
             spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);
         }

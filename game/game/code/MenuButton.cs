@@ -8,15 +8,17 @@ namespace game
     public class MenuButton
     {
         private Texture2D texture;
+        private Texture2D hoverTexture;
         private Vector2 position;
         private Rectangle bounds;
         public Action OnClick { get; set; }
         private bool isHovered;
         private bool isPressed;
 
-        public MenuButton(Texture2D texture, Vector2 position)
+        public MenuButton(Texture2D texture, Texture2D hoverTexture, Vector2 position)
         {
             this.texture = texture;
+            this.hoverTexture = hoverTexture;
             this.position = position;
             bounds = new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height);
         }
@@ -41,7 +43,14 @@ namespace game
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, Color.White);
+            if (isHovered)
+            {
+                spriteBatch.Draw(hoverTexture, position, Color.White);
+            }
+            else
+            {
+                spriteBatch.Draw(texture, position, Color.White);
+            }
         }
     }
 }

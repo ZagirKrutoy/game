@@ -26,8 +26,8 @@ namespace game
 
         public void LoadContent(ContentManager content)
         {
-            sliderBarTexture = content.Load<Texture2D>("slider_bar");
-            sliderButtonTexture = content.Load<Texture2D>("slider_button");
+            sliderBarTexture = content.Load<Texture2D>("VolumeSlider");
+            sliderButtonTexture = content.Load<Texture2D>("VolumeBtn");
             sliderRectangle = new Rectangle((int)position.X, (int)position.Y, sliderWidth, sliderBarTexture.Height);
             buttonRectangle = new Rectangle((int)position.X, (int)position.Y - (sliderButtonTexture.Height / 2) + (sliderRectangle.Height / 2), sliderButtonTexture.Width, sliderButtonTexture.Height);
         }

@@ -5,27 +5,47 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/background.jpg</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/backgroundA.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/btn.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/bulet.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/continue.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/continueBtn.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/continueBtnHover.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/dead_sound.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/dropGrenates.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/dropHeart.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/exit.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/exitBtn.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/exitBtnHover.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/File.spritefont</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/fire2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/game_music.mp3</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/gameCursorTexture.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/GameOverFont.spritefont</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grassBackground2.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grenadeExplosionSound.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grenadeTexture.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/grenadeTexture2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/heart.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/info.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/instructionBtn.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/instructionBtnHover.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/instructions.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man_run1.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man_run2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/man.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/menu_music.mp3</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/menuCursorTexture.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/newGameBtn.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/newGameBtnHover.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/playerDamageSound.mp3</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/reloading.mp3</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/ScoreFont.spritefont</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/shoot.mp3</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/slider_bar.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/slider_button.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/volumeBtn.png</File>
+    <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/volumeSlider.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie_run1.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie_run2.png</File>
     <File>C:/Users/snuuy/Documents/GitHub/game/game/game/Content/zombie.png</File>
@@ -33,7 +53,14 @@
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File>new_game</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
@@ -44,6 +71,19 @@
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>grassBackground.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
